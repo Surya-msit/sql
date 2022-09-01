@@ -1,0 +1,11 @@
+595. Big Countries
+select name,population,area from world where area >= 3000000 or population >= 25000000;
+
+1757. Recyclable and Low Fat Products
+select product_id from products where low_fats ='Y' and recyclable ='Y';
+
+584. Find Customer Referee
+select namefrom Customer where (referee_id!=2 OR referee_id IS null);
+
+183. Customers Who Never Order
+select name Customers from Customers where id not in (select customerId from orders) ;
